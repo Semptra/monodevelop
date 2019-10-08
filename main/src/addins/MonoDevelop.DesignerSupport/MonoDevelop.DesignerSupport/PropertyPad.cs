@@ -164,7 +164,7 @@ namespace MonoDevelop.DesignerSupport
 #else
 			var widget = new pg.PropertyGrid ();
 #endif
-
+			propertyGridWrapper = new PropertyGridWrapper (widget);
 			frame.Add (propertyGridWrapper.Widget);
 			propertyGridWrapper.PropertyGridChanged += Grid_Changed;
 
