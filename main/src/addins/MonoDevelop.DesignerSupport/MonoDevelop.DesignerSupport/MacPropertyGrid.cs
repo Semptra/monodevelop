@@ -82,6 +82,10 @@ namespace MonoDevelop.DesignerSupport
 			currentSelectedObject = null;
 		}
 
+		public object CurrentObject {
+			get => currentSelectedObject.Target;
+		}
+
 		public void SetCurrentObject (object lastComponent, object [] propertyProviders)
 		{
 			if (lastComponent != null) {
